@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Scale Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ring-container">
+        <div class="ring chromatic-ring"></div>
+        <div class="ring scale-ring" id="scaleRing"></div>
+    </div>
+    <select id="scaleSelect">
+        <option value="major">Major</option>
+        <option value="minor">Minor</option>
+        <option value="pentatonicMajor">Pentatonic Major</option>
+        <option value="pentatonicMinor">Pentatonic Minor</option>
+        <option value="natural">Natural Minor</option>
+        <option value="harmonic">Harmonic Minor</option>
+        <option value="melodic">Melodic Minor</option>
+        <option value="majorBlues">Major Blues</option>
+        <option value="minorBlues">Minor Blues</option>
+    </select>
+    <input type="number" id="rootNote" min="0" max="11" value="0">
+    <script src="script.js"></script>
+</body>
+</html>
